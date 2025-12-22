@@ -1,8 +1,8 @@
 [ascii]
 symbol = "ASCIIChar"
-promote = [0x41, 0x61, 0x31]
-range_start = 0x21
-range_end = 0x5F
+promote = [65, 97, 49]
+range_start = 33
+range_end = 127
 
 [latin_1_supplement]
 symbol = "Latin1SupplementChar"
