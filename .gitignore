@@ -6,6 +6,8 @@ Todo.md
 # auto generated files by project scripts (see `pyproject.toml`)
 char_literal/__init__.py
 char_literal/_symbols.py
+char_literal/_generate.py
+char_literal/_symbols.py
 char_literal/_generated/
 
 # personal settings
