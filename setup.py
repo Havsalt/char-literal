@@ -71,11 +71,11 @@ def create_symbol_file(
         # NOTE: Missing protection for edge case:
         #     - When there is more codepoints to promote than
         #       the count of codepoints in the range
-        for codepoint in range(range_start - 1, range_end):
+        for codepoint in range(range_start, range_end + 1):
             if promote is not None and codepoint in promote:
                 continue
             file.write(repr(chr(codepoint)))
-            if codepoint == range_end - 1:
+            if codepoint == range_end:
                 break
             file.write(",")
 
