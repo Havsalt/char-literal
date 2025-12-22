@@ -4,9 +4,7 @@ dev[0-9].py
 Todo.md
 
 # auto generated files by `setup.py`
-char_literal/__init__.py
-char_literal/_symbols.py
-char_literal/_generated/
+src/char_literal/
 
 # personal settings
 .vscode/
