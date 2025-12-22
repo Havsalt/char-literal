@@ -25,7 +25,6 @@ GEN_FOLDER: Final[Path] = MODULE_PATH / "_generated"
 GEN_FOLDER.mkdir(parents=True, exist_ok=True)
 SYMBOLS_PATH: Final[Path] = MODULE_PATH / "_symbols.py"
 INIT_PATH: Final[Path] = MODULE_PATH / "__init__.py"
-print(INIT_PATH, "!!!")
 
 
 class BMPBlock(TypedDict):
