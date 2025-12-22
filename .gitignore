@@ -1,0 +1,23 @@
+# dev related
+dev.py
+dev[0-9].py
+Todo.md
+
+# auto generated files by project scripts (see `pyproject.toml`)
+char_literal/__init__.py
+char_literal/_symbols.py
+char_literal/_generated/
+
+# personal settings
+.vscode/
+
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# venv
+.venv
