@@ -10,7 +10,7 @@ authors = [
     { name = "Havsalt", email = "77575424+Havsalt@users.noreply.github.com" }
 ]
 readme = "README.md"
-license = { file = "LICENSE" }
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 dependencies = [
     "typing-extensions>=4.15.0 ; python_full_version < '3.11'",
@@ -22,13 +22,7 @@ dev = [
     "ruff~=0.13.0",
 ]
 
-[project.scripts]
-generate-init = "char_literal._generate:generate_init_file"
-generate-blocks = "char_literal._generate:generate_blocks"
-generate-symbols = "char_literal._generate:generate_symbol_layer"
-generate-all = "char_literal._generate:generate_all"
-
-[project.links]
+[project.urls]
 "Documentation" = "https://github.com/havsalt/char-literal#Docs.md"
 "Source Code" = "https://github.com/havsalt/char-literal"
 "Issues" = "https://github.com/havsalt/char-literal/issues"
