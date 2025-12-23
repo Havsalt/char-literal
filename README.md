@@ -1,6 +1,6 @@
 # Char Literal
 
-Annotate a single, literal character
+Annotate a single, literal character.
 
 ## Example
 
