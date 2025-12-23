@@ -2,11 +2,6 @@
 requires = ["setuptools~=80.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["*/__init__.py.template", "*/.toml"]
-exclude = ["src/char_literal/*"]
-
 [tool.setuptools.data-files]
 char_literal_meta = [
     "*/bmp.toml",
