@@ -13,7 +13,7 @@ packages = ["src/char_literal"]
 
 [project]
 name = "char-literal"
-version = "0.1.0.dev2"
+version = "0.1.0rc1"
 description = "Annotate a single, literal character"
 authors = [
     { name = "Havsalt", email = "77575424+Havsalt@users.noreply.github.com" }
