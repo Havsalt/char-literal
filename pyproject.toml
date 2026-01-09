@@ -1,16 +1,19 @@
 [build-system]
-requires = ["setuptools~=80.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools.data-files]
-char_literal_meta = [
-    "*/bmp.toml",
-    "*/__init__.py.template",
+requires = [
+    "hatchling",
+    "typing-extensions~=4.15 ; python_full_version < '3.11'",
+    "tomli~=2.0 ; python_full_version < '3.11'",
 ]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.hooks.custom]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/char_literal"]
 
 [project]
 name = "char-literal"
-version = "0.1.0.dev1"
+version = "0.1.0.dev2"
 description = "Annotate a single, literal character"
 authors = [
     { name = "Havsalt", email = "77575424+Havsalt@users.noreply.github.com" }
