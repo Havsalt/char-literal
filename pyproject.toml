@@ -27,7 +27,7 @@ path = "hatch_build.py"
 
 [project]
 name = "char-literal"
-version = "0.1.0rc1"
+version = "0.1.0rc2"
 description = "Annotate a single, literal character"
 authors = [
     { name = "Havsalt", email = "77575424+Havsalt@users.noreply.github.com" }
