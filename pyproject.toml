@@ -42,6 +42,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "hatchling>=1.28.0",  # Helps with linting
     "ruff~=0.13.0",
 ]
 
