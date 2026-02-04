@@ -35,8 +35,9 @@ class CustomHook(BuildHookInterface):
             "\n",
         ]
     )
-    _BLOCK_ASSIGNMENT: Final[str] = ": _TypeAlias = "
+    _BLOCK_ASSIGNMENT: Final[str] = ": _TypeAlias = _Literal"
     _CHAR_UNION_SYMBOL: Final[str] = "Char"
+    _CHAR_UNION_REAL_TYPE: Final[str] = str.__name__
 
     def initialize(
         self,
@@ -101,6 +102,7 @@ class CustomHook(BuildHookInterface):
             generation_note=self._GENERATION_NOTE,
             tab=self._TAB,
             char_union_symbol=self._CHAR_UNION_SYMBOL,
+            char_union_real_type=self._CHAR_UNION_REAL_TYPE,
             char_union_definition="|".join(block["symbol"] for block in toml.values()),
             imported_symbols="\n".join(
                 (
