@@ -6,4 +6,5 @@ if TYPE_CHECKING:
 {imported_symbols}
 {tab}{char_union_symbol}: TypeAlias = {char_union_definition}
 else:
+{tab}{char_union_symbol}: TypeAlias = {char_union_real_type}
 {placeholder_symbols}
